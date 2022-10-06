@@ -19,6 +19,7 @@ function CheckoutProduct({id, image, title, price, rating}) {
                 ))}
             </div>
             <button>Remove from Basket</button>
+            
         </div>
 
     </div>
