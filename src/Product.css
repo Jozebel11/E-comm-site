@@ -7,11 +7,14 @@
     padding: 20px;
     width: 100%;
     max-height: 400px;
-    max-width: 100px;
+    max-width: 100%;
     background-color: white;
     z-index: 1;
 
 
+}
+.product_rating {
+    display: flex;
 }
 
 .product > img {
