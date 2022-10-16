@@ -8,7 +8,7 @@
     width: 100%;
     max-height: 400px;
     max-width: 100%;
-    background-color: white;
+    background-color: #fffcf2;
     z-index: 1;
 
 
@@ -27,16 +27,25 @@
 .product_info {
     height: 100px;
     margin-bottom: 15px;
+    color: #252422;
 }
 
 .product_price {
     margin-top: 5px;
+    color: #403d39;
 }
 
 .product > button {
-    background-color: #f0c14b;
-    border: 1px solid;
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
     margin-top: 10px;
-    border-color: #a88734 #9c7e31 #856a29;
-    color: #111;
+    height: 25px;
+    color: #252422;
+}
+.product > button:hover{
+    cursor: pointer;
 }

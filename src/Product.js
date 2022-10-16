@@ -1,6 +1,7 @@
 import React from 'react'
 import './Product.css'
 import { useStateValue } from './StateProvider'
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 function Product({id, title, image, price, rating}) {
   const [{basket}, dispatch] = useStateValue();
@@ -22,6 +23,7 @@ function Product({id, title, image, price, rating}) {
   };
   return (
     <div className='product'>
+        <img src={image} alt='product-image'/>
         <div className='product_info'>
             <p>{title}</p>
             <p className='product_price'>
@@ -36,8 +38,7 @@ function Product({id, title, image, price, rating}) {
                 ))}
             </div>
         </div>
-        <img src={image} alt='product-image'/>
-        <button onClick={addToBasket}>Add to Basket</button>
+        <button onClick={addToBasket}><AddCircleIcon /></button>
     </div>
   )
 }
