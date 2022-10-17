@@ -6,6 +6,16 @@
     max-width: 1500px;
 }
 
+.home_promotion {
+    height: 200px;
+    background-color: #ccc5b9;
+    clip-path: polygon(0 0, 100% 0, 100% 39%, 0 85%);
+}
+
+.home_banner {
+    height: 50px;
+    background-color: #403d39;
+}
 
 
 .home_row {
@@ -25,7 +35,11 @@
 }
 .product:hover {
     transition: all .5s cubic-bezier(0,0,.5,1);
-    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+    box-shadow: 2px 4px 10px rgba(0,0,0,.16);
     transform: scale3d(1.02,1.02,1.02)
 
+}
+.product {
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.16);
 }

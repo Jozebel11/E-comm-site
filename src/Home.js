@@ -6,6 +6,12 @@ function Home() {
   return (
     <div className='home'>
         <div className='home_container'>
+            <div className='home_banner'>
+              
+            </div>
+            <div className='home_promotion'>
+
+            </div>
             <div className='home_row'>
                 <Product className='product'
                  id="12321341"
