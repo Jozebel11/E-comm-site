@@ -1,5 +1,11 @@
 .checkout {
     display: flex;
+    flex-direction: column;
+}
+
+
+.checkout_container {
+    display: flex;
     justify-content: space-between;
     padding: 20px;
     background-color: white;
@@ -7,6 +13,12 @@
     
    
 }
+
+.checkout_banner {
+    height: 50px;
+    background-color: #403d39;
+}
+
 
 .checkout_ad {
     width: 100%;
@@ -18,3 +30,4 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+

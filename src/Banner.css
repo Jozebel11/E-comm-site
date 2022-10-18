@@ -1,0 +1,32 @@
+.banner {
+    height:40px;
+    display: flex;
+    align-items: center;
+    background-color: #403d39;
+    top: 0;
+    padding: 3px;
+}
+
+.promotion_container {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 2px solid white;
+    border-radius: 2px;
+
+}
+.promotion_left {
+    margin-right: 50px;
+    color: white;
+}
+
+.promotion_right {
+    border: 2px solid #252422 ;
+    color: #252422;
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
