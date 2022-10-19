@@ -34,4 +34,5 @@
     transition: all .5s cubic-bezier(0,0,.2,1);
     background-color: #403d39;
     color: white;
+    cursor: pointer;
 }

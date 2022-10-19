@@ -1,5 +1,5 @@
 .banner {
-    height:40px;
+    height:50px;
     display: flex;
     align-items: center;
     background-color: #403d39;
@@ -8,7 +8,7 @@
 }
 
 .promotion_container {
-    height: 35px;
+    height: 45px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
 
 }
 .promotion_left {
-    margin-right: 50px;
+    margin-right: 25px;
     color: white;
 }
 
@@ -29,4 +29,13 @@
     background-color: white;
     border-radius: 5px;
     padding: 3px 8px;
+}
+
+.promotion_code{
+    font-weight: 600;
+}
+
+.promotion_info {
+    
+
 }

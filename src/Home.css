@@ -8,8 +8,11 @@
 
 .home_promotion {
     height: 200px;
-    background-color: #ccc5b9;
+    
+    background-color: #252422;
     clip-path: polygon(0 0, 100% 0, 100% 39%, 0 85%);
+    position: relative;
+    
 }
 
 
@@ -38,4 +41,49 @@
 .product {
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.16);
+}
+
+.home_promotion_info {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    
+    
+    
+}
+
+.home_promotion_info>h4{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:2px 3px 9px rgba(0,0,0,0.52);
+    
+
+}
+
+.home_promotion_info>p{
+    align-self: center;
+    margin-left: 10px;
+    color: whitesmoke;
+
+}
+
+
+.promotion_image {
+
+    max-width: 105px;
+    height: 200%;
+    
+
+    
+    
+    object-fit: contain;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.56);;
+    
+    
+    
 }

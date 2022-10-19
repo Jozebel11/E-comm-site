@@ -6,7 +6,7 @@ function Banner() {
     <div className='banner'>
         <div className='promotion_container'>
             <div className='promotion_left'>
-                <p className='promotion_info'>Get 15% off your first 0rder with code</p>
+                <p className='promotion_info'>Get <span>15%</span> off your first order with code</p>
 
             </div>
             <div className='promotion_right'>
