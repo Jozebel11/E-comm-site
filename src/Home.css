@@ -7,11 +7,12 @@
 }
 
 .home_promotion {
-    height: 200px;
+    height: 180px;
     
     background-color: #252422;
-    clip-path: polygon(0 0, 100% 0, 100% 39%, 0 85%);
+    
     position: relative;
+   
     
 }
 
@@ -46,7 +47,8 @@
 .home_promotion_info {
     display: flex;
     justify-content: flex-start;
-    position: fixed;
+    
+    
     
     
     
