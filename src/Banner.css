@@ -28,18 +28,14 @@
     color: #252422;
     background-color: white;
     border-radius: 5px;
-    padding: 0 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 3px 8px;
 }
 
 .promotion_code{
     font-weight: 600;
-    margin: 0;
 }
 
 .promotion_info {
-    margin: 0;
-}
+    
 
+}

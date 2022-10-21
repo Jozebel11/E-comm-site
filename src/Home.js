@@ -3,77 +3,15 @@ import './Home.css'
 import Product from './Product'
 
 function Home() {
-  $(document).ready(function() {
-    $('.carousel').carousel({
-      interval: 6000
-    })
-  });
   return (
     <div className='home'>
         <div className='home_container'>
             
             <div className='home_promotion'>
               <div className='home_promotion_info'>
-              <div class="carousel slide" id="myCarousel">
-        <div class="carousel-inner">
- 
-            <div class="item active">
-            
-                <div class="bannerImage">
-                    <a href="#"><img src="http://placehold.it/960x405" alt=""/></a>
-                </div>
-                            
-                <div class="caption row-fluid">
-                    <div class="span4"><h3>Nullam Condimentum Nibh Etiam Sem</h3>
-                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
-                    </div>                	
-                	<div class="span8"><p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                	</div>
-                </div>
-                                                         
-            </div>
-
-            <div class="item">
-            
-                <div class="bannerImage">
-                    <a href="#"><img src="http://placehold.it/960x405" alt=""/></a>
-                </div>
-                            
-                <div class="caption row-fluid">
-                    <div class="span4"><h3>Nullam Condimentum Nibh Etiam Sem</h3>
-                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
-                    </div>                	
-                	<div class="span8"><p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                	</div>
-                </div>
-                                                         
-            </div>           
-
-            <div class="item">
-            
-                <div class="bannerImage">
-                    <a href="#"><img src="http://placehold.it/960x405" alt=""/></a>
-                </div>
-                            
-                <div class="caption row-fluid">
-                    <div class="span4"><h3>Nullam Condimentum Nibh Etiam Sem</h3>
-                    <a class="btn btn-mini" href="#">&raquo; Read More</a>
-                    </div>                	
-                	<div class="span8"><p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-                	</div>
-                </div>
-                                                         
-            </div>                    
- 
-        </div>
-        
-        <div class="control-box">                            
-            <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
-            <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
-        </div>
-                              
-    </div>
-              
+                <h4>Now only <span><small>£</small>498.99</span>!</h4>
+                <img className="promotion_image" src='https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg' alt='apple-ipad-pro'/>
+                <p>Apple iPad Pro 128GB</p>
               </div>
 
             </div>
@@ -96,7 +34,7 @@ function Home() {
             <div className='home_row'>
                 <Product className='product'
                   id="4903850"
-                  title="Fitbit Charge 4 Fitness Activity Tracker"
+                  title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
                   price={199.99}
                   rating={3}
                   image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
