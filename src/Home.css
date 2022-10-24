@@ -6,6 +6,8 @@
     max-width: 1500px;
 }
 
+
+
 .home_promotion {
     height: 200px;
     
@@ -46,7 +48,7 @@
 .home_promotion_info {
     display: flex;
     justify-content: flex-start;
-    position: fixed;
+   
     
     
     

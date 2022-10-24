@@ -9,7 +9,13 @@ import Logo from './logo-no-background.png'
 import PersonIcon from '@mui/icons-material/Person';
 
 function Header() {
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket, user}, dispatch] = useStateValue();
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => {
+      setOpen(!open);
+    };
 
   return (
     <div className='header'>
@@ -22,13 +28,24 @@ function Header() {
             <SearchIcon className='header_searchIcon'/>
         </div>
         <div className='header_nav'>
-            
-            
-            <div className='header_option'>
+            <div className='header_option' onClick={handleOpen} >
                 <span className='header_optionLineTwo'>
                 <PersonIcon />
                 </span>
+                {open ? (
+                  <ul className="menu">
+                    <Link to='/login'>
+                    <li className="menu_item">
+                      Sign In
+                    </li>
+                    </Link>
+                    <li className="menu_item">
+                       Orders & Returns
+                    </li>
+                  </ul>
+                ) : null}
             </div>
+            
             <Link to='/checkout'>
             <div className='header_optionBasket'>
                 <ShoppingBasketIcon />
