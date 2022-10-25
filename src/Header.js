@@ -7,9 +7,16 @@ import { useStateValue } from './StateProvider';
 import { upDateBasketQuantity } from './reducer';
 import Logo from './logo-no-background.png'
 import PersonIcon from '@mui/icons-material/Person';
+import { auth } from "./firebase";
 
 function Header() {
     const [{basket, user}, dispatch] = useStateValue();
+
+    const handleAuthenticaton = () => {
+        if (user) {
+          auth.signOut();
+        }
+      };
 
     const [open, setOpen] = React.useState(false);
 
@@ -34,9 +41,10 @@ function Header() {
                 </span>
                 {open ? (
                   <ul className="menu">
-                    <Link to='/login'>
-                    <li className="menu_item">
-                      Sign In
+                    <h4 className='menu_title'>Welcome {!user ? 'Guest' : user.email}</h4>
+                    <Link to={!user && '/login'}>
+                    <li onClick={handleAuthenticaton} className="menu_item">
+                    {user ? 'Sign Out' : 'Sign In'}
                     </li>
                     </Link>
                     <li className="menu_item">
