@@ -31,3 +31,12 @@
     border-bottom: 1px solid lightgray;
 }
 
+@media only screen and (max-width: 768px) {
+    .checkout_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
+

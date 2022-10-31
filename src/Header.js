@@ -47,9 +47,11 @@ function Header() {
                     {user ? 'Sign Out' : 'Sign In'}
                     </li>
                     </Link>
+                    <Link to={'/orders'}>
                     <li className="menu_item">
                        Orders & Returns
                     </li>
+                    </Link>
                   </ul>
                 ) : null}
             </div>

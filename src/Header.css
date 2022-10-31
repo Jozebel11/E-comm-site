@@ -31,7 +31,7 @@
 }
 
 .header_searchInput {
-    height: 35px;
+    height: 35px !important;
     
     border-bottom: solid 2px #403d39;
     border-right: none;
@@ -96,7 +96,10 @@
   
   .menu {
     position:absolute;
-    top: 40px;
+    top: 50px;
+    right: 70px;
+    
+    
   
     list-style-type: none;
     margin: 5px 0;
@@ -125,4 +128,11 @@
   .menu_title {
     color: #403d39;
   }
-  
+  @media only screen and (max-width: 768px){
+    .menu{
+        top:50px;
+        right:70px;
+    }
+
+
+  }

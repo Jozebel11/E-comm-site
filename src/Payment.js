@@ -87,7 +87,7 @@ function Payment() {
             <div className='payment__container'>
                 <h1>
                     Checkout (
-                        <Link to="/checkout">{basket.length} items</Link>
+                        <Link className="payment_checkout_amount" to="/checkout">{basket.length} items</Link>
                         )
                 </h1>
 
@@ -98,7 +98,7 @@ function Payment() {
                         <h3>Delivery Address</h3>
                     </div>
                     <div className='payment__address'>
-                        <p>{user.email}</p>
+                        <p>{user?.email}</p>
                         <p>123 React Lane</p>
                         <p>Los Angeles, CA</p>
                     </div>
@@ -143,7 +143,7 @@ function Payment() {
                                         value={getBasketTotal(basket)}
                                         displayType={"text"}
                                         thousandSeparator={true}
-                                        prefix={"$"}
+                                        prefix={"£"}
                                     />
                                     <button disabled={processing || disabled || succeeded}>
                                         <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
