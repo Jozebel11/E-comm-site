@@ -28,9 +28,11 @@ function Payment() {
             const response = await axios({
                 method: 'post',
                 // Stripe expects the total in a currencies subunits
-                url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+                url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+                
             });
             setClientSecret(response.data.clientSecret)
+            console.log(response)
         }
 
         getClientSecret();
@@ -53,7 +55,7 @@ function Payment() {
 
             db
               .collection('users')
-              .doc(user.uid)
+              .doc(user?.uid)
               .collection('orders')
               .doc(paymentIntent.id)
               .set({
@@ -70,7 +72,7 @@ function Payment() {
                 type: 'EMPTY_BASKET'
             })
 
-            history.replace('/orders')
+            history('/orders')
         })
 
     }
@@ -87,7 +89,7 @@ function Payment() {
             <div className='payment__container'>
                 <h1>
                     Checkout (
-                        <Link className="payment_checkout_amount" to="/checkout">{basket.length} items</Link>
+                        <Link className="payment_checkout_amount" to="/checkout">{basket?.length} items</Link>
                         )
                 </h1>
 

@@ -31,7 +31,8 @@
 }
 
 .header_searchInput {
-    height: 35px !important;
+    box-sizing: border-box;
+    height: 37px !important;
     
     border-bottom: solid 2px #403d39;
     border-right: none;
@@ -40,13 +41,16 @@
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 100%;
+    min-height: 37px;
 
 }
 
 .header_searchIcon {
+    box-sizing: border-box;
     padding: 5px;
-    height: 27px !important;
+    height: 37px !important;
     width: 40px !important;
+    min-height: 37px;
     background-color: white;
     border-bottom-right-radius: 33px;
     border-top-right-radius: 33px;
@@ -54,6 +58,7 @@
     border-bottom: solid 2px #403d39;
     border-right: solid 2px #403d39;
     border-top: solid 2px #403d39;
+    margin-left: -5px;
     
 }
 .header_nav {

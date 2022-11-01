@@ -16,7 +16,7 @@ function Checkout() {
             
                 <div>
                     <h2 className='checkout_title'>
-                        Your Basket has {basket.length} items
+                        Your Basket has {basket?.length} items
                     </h2>
                     {basket.map(item => (
                         <CheckoutProduct

@@ -72,3 +72,13 @@ button > span {
     margin-left: 3px;
     margin-top: 3px;
 }
+@media only screen and (max-width: 550px) { 
+    .checkoutProduct {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .checkoutProduct_image{
+        margin-bottom: 10px;
+    }
+}
